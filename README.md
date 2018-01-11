@@ -7,7 +7,7 @@ Sinatra-based Heroku Add-on provisioning service, generated with the
 
 Deploy your copy via the Heroku Button
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/heroku/addon-template)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/banzera/addon-template)
 
 Then run the following commands to work with the generated code locally:
 

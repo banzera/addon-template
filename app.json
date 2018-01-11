@@ -1,8 +1,8 @@
 {
     "name": "Heroku Add-on Template",
     "description": "Sinatra-based Heroku Add-on template",
-    "website": "https://github.com/heroku/addon-template",
-    "repository": "https://github.com/heroku/addon-template",
+    "website": "https://github.com/banzera/addon-template",
+    "repository": "https://github.com/banzera/addon-template",
     "logo": "http://f.cl.ly/items/2f1z0E0X2t1C141M0x1L/heroku-add-ons.png",
     "success_url": "/",
     "keywords": [
@@ -16,7 +16,6 @@
     "addons": [
         "papertrail",
         "heroku-postgresql",
-        "rollbar",
-        "mailgun"
+        "rollbar"
     ]
 }
