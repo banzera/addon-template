@@ -32,8 +32,14 @@ module Endpoints
         #
         # See: https://devcenter.heroku.com/articles/building-a-heroku-add-on#2-implement-the-provision-call
 
-        status 201
-        MultiJson.encode(id: resource.uuid)
+        response = {
+          id: resource.uuid, # Unique identifier from your system
+          config: { "MACH52_URL" => "https://mach52.5and2studio.com/#{resource.uuid}" },
+          message: "Workflow breaking sound barriers!"
+        }
+
+        status 200
+        MultiJson.encode(response)
       end
 
       put "/:id" do |id|
