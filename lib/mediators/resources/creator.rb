@@ -1,6 +1,6 @@
 module Mediators::Resources
   class Creator < Mediators::Base
-    def initialize(heroku_id:, plan:, region:, callback_url:)
+    def initialize(heroku_id:, plan:, region:, callback_url:, options:)
 
       # FIXME: Provision whatever services your add-on provides here.
       # Provisioning might be an API call to a service you've created

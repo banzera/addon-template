@@ -13,10 +13,11 @@ module Endpoints
 
       post do
         creator = Mediators::Resources::Creator.new(
-          heroku_id: body_params['heroku_id'],
-          plan: body_params['plan'],
-          region: body_params['region'],
-          callback_url: body_params['callback_url']
+          heroku_id:    body_params['heroku_id'],
+          plan:         body_params['plan'],
+          region:       body_params['region'],
+          callback_url: body_params['callback_url'],
+          options:      body_params['options']
         )
         resource = creator.call
 
