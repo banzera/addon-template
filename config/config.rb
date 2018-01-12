@@ -1,3 +1,6 @@
+require 'dotenv'
+Dotenv.load
+
 require "pliny/config_helpers"
 
 # Access all config keys like the following:
