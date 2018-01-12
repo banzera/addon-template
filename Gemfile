@@ -21,7 +21,9 @@ gem "sinatra-router"
 gem "sucker_punch"
 
 group :development, :test do
+  gem "dotenv"
   gem "fabrication"
+  gem "racksh"
   gem "pry-byebug"
   gem "bundler-audit", require: false
 end
