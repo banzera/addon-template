@@ -1,10 +1,15 @@
 module Endpoints
   class Heroku::Resources < Base
     use Middleware::HerokuAuthenticator
+    serializer Serializers::Resource
 
     namespace "/heroku/resources" do
       before do
         content_type :json, charset: 'utf-8'
+      end
+
+      get do
+        encode serialize Resource.all
       end
 
       before "/:id" do |id|
