@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.3.1"
+ruby "2.6.6"
 
 gem "multi_json"
 gem "oj"
@@ -37,7 +37,6 @@ group :test do
   gem "simplecov", require: false
   gem "committee"
   gem "database_cleaner"
-  gem "dotenv"
   gem "rack-test"
   gem "rspec"
 end
